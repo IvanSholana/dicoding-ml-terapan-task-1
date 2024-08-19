@@ -86,16 +86,18 @@ Penilaian data yang cukup baik disebabkan jumlah null value yang tidak mencapai 
 
 #### A. Class Distribution
 
-![[89bc0c9da81e7e5bab22b3c029d5bc770e1fc886.png]]
+![Class Distribution](https://github.com/IvanSholana/dicoding-ml-terapan-task-1/blob/main/documentation/89bc0c9da81e7e5bab22b3c029d5bc770e1fc886.png?raw=true)
 
 #### B. HomePlanet x Transported
 
-![[cbd9eb4960271074d87314d893cbd5cf657fc0eb.png]]
+![HomePlanet x Transported](https://github.com/IvanSholana/dicoding-ml-terapan-task-1/blob/main/documentation/cbd9eb4960271074d87314d893cbd5cf657fc0eb.png?raw=true)
+
 Diagram di atas menunjukkan bahwa HomePlanet tidak memiliki pengaruh yang signifikan terhadap status Transported. Meskipun Earth memiliki jumlah penumpang terbanyak, distribusi Transported hampir seimbang di semua planet, menunjukkan bahwa faktor-faktor lain harus dipertimbangkan untuk memahami pola Transported.
 
 #### C. CycroSleep x Transported
 
-![[66a1d813cca303c2e0d13ec91e657bb1de0338d3.png]]
+![CycroSleep x Transported](https://github.com/IvanSholana/dicoding-ml-terapan-task-1/blob/main/documentation/cbd9eb4960271074d87314d893cbd5cf657fc0eb.png?raw=true)
+
 Penumpang yang berada dalam kondisi CryoSleep cenderung memiliki pengaruh lebih besar daripada mereka yang tidak berada dalam kondisi CryoSleep. Oleh karena itu, penting untuk mengubah kolom CryoSleep menggunakan LabelEncoder untuk memberikan bobot yang lebih tinggi pada nilai True dibandingkan dengan False.
 
 #### D. CycroSleep x 5 Features
@@ -125,22 +127,26 @@ Pada hasil analisis di atas menunjukkan bahwa apabila feature CrycoSleep memilik
 
 #### E. VIP x Transported
 
-![[603cc79917110879f96263b3c28149e467171e13.png]]
+![E. VIP x Transported](https://github.com/IvanSholana/dicoding-ml-terapan-task-1/blob/main/documentation/603cc79917110879f96263b3c28149e467171e13.png?raw=true)
+
 Distribusi nilai VIP sangat imbalance dan pada nilai bernilai False dapat dilihat bahwa perbandingan antara nilai VIP False yang Transported dan tidak cukup seimbang.
 
 #### F. HomePlanet x VIP
 
-![[d427ec98765bdf46b87a5b41c49c15d0c484a441.png]]
+![HomePlanet x VIP](https://github.com/IvanSholana/dicoding-ml-terapan-task-1/blob/main/documentation/d427ec98765bdf46b87a5b41c49c15d0c484a441.png?raw=true)
+
 Berdasarkan analisis di atas menunjukkan bahwa penumpang yang berasal dari Earth tidak ada yang berstatus sebagai penumpang VIP sehingga sangat memungkinkan untuk mengisi nilai VIP menjadi False apabila HomePlanetnya adalah Earth.
 
 #### G. Age X Transported
 
-![[21a873a018ab29417fa7e211158ab00a8533a33d.png]]
+![Age X Transported](https://github.com/IvanSholana/dicoding-ml-terapan-task-1/blob/main/documentation/21a873a018ab29417fa7e211158ab00a8533a33d.png?raw=true)
+
 Berdasarkan hasil analisis di atas, penumpang yang berusia di bawah 20 tahun dan di atas 75 tahun tidak memiliki status VIP. Oleh karena itu, kondisi ini dapat digunakan untuk mengisi nilai Age dan VIP yang bernilai NaN.
 
 #### H. Destination x Transported
 
-![[12513dc65f1eed4cf95a1493d93c66424261fcb9.png]]
+![Destination x Transported](https://github.com/IvanSholana/dicoding-ml-terapan-task-1/blob/main/documentation/12513dc65f1eed4cf95a1493d93c66424261fcb9.png?raw=true)
+
 Diagram di atas menunjukkan bahwa Destination tidak memiliki pengaruh yang signifikan terhadap status Transported. Meskipun Trappist-1e memiliki jumlah penumpang terbanyak, distribusi Transported hampir seimbang di semua planet, menunjukkan bahwa faktor-faktor lain harus dipertimbangkan untuk memahami pola Transported.
 
 ## 4. Data Preparation
